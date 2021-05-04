@@ -1,6 +1,6 @@
 import discord
 import os
-import search_runpee
+import search
 from dotenv import load_dotenv
 
 # Use python-dotenv pakcage to get variables stored in .env file of your project
@@ -18,7 +18,7 @@ no_result_message = '''Sorry :pensive: , we can\'t find any services in the area
 but you can try again later or try changing the area. :pray: '''
 
 # instantiate RunPeeWeb class from search_runpee.py
-runpee_web = search_runpee.RunPeeWeb()
+runpee_web = search.WebScrape()
 
 @client.event
 async def on_ready():
